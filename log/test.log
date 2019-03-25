@@ -59,3 +59,905 @@ Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
 Started GET "/articles/1/edit" for 127.0.0.1 at 2018-10-15 16:56:18 -0400
   [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:52:18.788423"], ["updated_at", "2019-03-25 18:52:18.788423"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:52:18 -0700
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:52:18.796253"], ["updated_at", "2019-03-25 18:52:18.796253"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:52:18 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:52:18.799632"], ["updated_at", "2019-03-25 18:52:18.799632"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:52:18 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:52:18.804101"], ["updated_at", "2019-03-25 18:52:18.804101"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.8ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:53:04.268801"], ["updated_at", "2019-03-25 18:53:04.268801"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:53:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:53:04.275890"], ["updated_at", "2019-03-25 18:53:04.275890"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:53:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:53:04.279902"], ["updated_at", "2019-03-25 18:53:04.279902"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 11:53:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 18:53:04.285386"], ["updated_at", "2019-03-25 18:53:04.285386"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 11:53:04 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.2ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:25:02.227776"], ["updated_at", "2019-03-25 19:25:02.227776"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:25:02 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:25:02.234441"], ["updated_at", "2019-03-25 19:25:02.234441"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:25:02 -0700
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:25:02.237413"], ["updated_at", "2019-03-25 19:25:02.237413"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:25:02 -0700
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:25:02.241559"], ["updated_at", "2019-03-25 19:25:02.241559"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:25:02 -0700
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.8ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:28:15.990569"], ["updated_at", "2019-03-25 19:28:15.990569"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:28:15 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 331ms (Views: 322.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:28:16.342723"], ["updated_at", "2019-03-25 19:28:16.342723"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:28:16.350287"], ["updated_at", "2019-03-25 19:28:16.350287"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:28:16.372294"], ["updated_at", "2019-03-25 19:28:16.372294"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:28:16.380799"], ["updated_at", "2019-03-25 19:28:16.380799"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:28:16 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:35:44.409906"], ["updated_at", "2019-03-25 19:35:44.409906"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 185ms (Views: 177.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:35:44.611170"], ["updated_at", "2019-03-25 19:35:44.611170"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:35:44.645546"], ["updated_at", "2019-03-25 19:35:44.645546"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:35:44.666413"], ["updated_at", "2019-03-25 19:35:44.666413"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:35:44.674470"], ["updated_at", "2019-03-25 19:35:44.674470"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:35:44.696469"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:35:44 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:36:42.430753"], ["updated_at", "2019-03-25 19:36:42.430753"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 170ms (Views: 163.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:36:42.614647"], ["updated_at", "2019-03-25 19:36:42.614647"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:36:42.643153"], ["updated_at", "2019-03-25 19:36:42.643153"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:36:42.670895"], ["updated_at", "2019-03-25 19:36:42.670895"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:36:42.678588"], ["updated_at", "2019-03-25 19:36:42.678588"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:36:42.698781"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:36:42 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:39:18.942023"], ["updated_at", "2019-03-25 19:39:18.942023"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:18 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 170ms (Views: 162.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:39:19.125451"], ["updated_at", "2019-03-25 19:39:19.125451"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:39:19.155765"], ["updated_at", "2019-03-25 19:39:19.155765"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:39:19.179948"], ["updated_at", "2019-03-25 19:39:19.179948"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:39:19.187042"], ["updated_at", "2019-03-25 19:39:19.187042"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:39:19.207963"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:39:19 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.3ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:04.870227"], ["updated_at", "2019-03-25 19:40:04.870227"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:04 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 172ms (Views: 164.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:05.058109"], ["updated_at", "2019-03-25 19:40:05.058109"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:05.091596"], ["updated_at", "2019-03-25 19:40:05.091596"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:40:05.112862"], ["updated_at", "2019-03-25 19:40:05.112862"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:05.120224"], ["updated_at", "2019-03-25 19:40:05.120224"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:40:05.140884"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:05 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.8ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:26.600077"], ["updated_at", "2019-03-25 19:40:26.600077"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 176ms (Views: 168.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:26.789249"], ["updated_at", "2019-03-25 19:40:26.789249"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:26.820736"], ["updated_at", "2019-03-25 19:40:26.820736"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:40:26.844566"], ["updated_at", "2019-03-25 19:40:26.844566"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:26.851727"], ["updated_at", "2019-03-25 19:40:26.851727"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:40:26.871669"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:26 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.7ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:37.433254"], ["updated_at", "2019-03-25 19:40:37.433254"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 174ms (Views: 167.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:37.622351"], ["updated_at", "2019-03-25 19:40:37.622351"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:37.631825"], ["updated_at", "2019-03-25 19:40:37.631825"]]
+  [1m[35m (24.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:40:37.677887"], ["updated_at", "2019-03-25 19:40:37.677887"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:40:37.684771"], ["updated_at", "2019-03-25 19:40:37.684771"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-03-25 19:40:37.704743"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:40:37 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.3ms)[0m  [1m[31mDELETE FROM "articles";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'articles';[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:41:08.495251"], ["updated_at", "2019-03-25 19:41:08.495251"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 169ms (Views: 162.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:41:08.678221"], ["updated_at", "2019-03-25 19:41:08.678221"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:41:08.685609"], ["updated_at", "2019-03-25 19:41:08.685609"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"My article title", "description"=>"My article description", "commit"=>"Submit Article"}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My article title"], ["description", "My article description"], ["created_at", "2019-03-25 19:41:08.729408"], ["updated_at", "2019-03-25 19:41:08.729408"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My Article"], ["description", "My article desc"], ["created_at", "2019-03-25 19:41:08.737663"], ["updated_at", "2019-03-25 19:41:08.737663"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My edit", "description"=>"My article description"}, "commit"=>"Submit Article", "id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "My edit"], ["description", "My article description"], ["updated_at", "2019-03-25 19:41:08.760214"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+Started GET "/articles/1" for 127.0.0.1 at 2019-03-25 12:41:08 -0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
